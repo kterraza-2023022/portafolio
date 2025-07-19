@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     series: [{
       name: 'Nivel',
-      data: [90, 85, 80, 75, 70, 65, 60, 60]
+      data: [90, 85, 80, 87, 90, 85, 85, 60, 60, 70, 86,90]
     }],
     xaxis: {
-      categories: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'MySQL', 'PostgreSQL'],
+      categories: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'MySQL', 'PostgreSQL', '.NET','Java', 'SpringBoot', 'GitHub' ],
       labels: {
         style: {
           colors: '#fff',

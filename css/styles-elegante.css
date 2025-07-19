@@ -1,0 +1,288 @@
+
+:root {
+  --color-principal: #10b981;
+  --color-secundario: #0f172a;
+  --color-fondo: #111827;
+  --color-texto: #f1f5f9;
+  --color-acento: #22d3ee;
+  --color-boton: #10b981;
+  --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-principal);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0f172a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.nav-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--color-boton);
+}
+
+/* Botón scroll */
+.btn-scroll {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 28px;
+  background-color: var(--color-boton);
+  color: #0f172a;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  box-shadow: none;
+}
+
+.btn-scroll:hover {
+  background-color: #0ea76b;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 0;
+}
+
+/* Bienvenida */
+.bienvenida .titulo-typing {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nombre {
+  color: var(--color-acento);
+}
+
+.frase {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.presentacion-extra {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.presentacion-extra .icon {
+  margin-right: 0.4rem;
+}
+
+/* Sobre mí */
+.sobremi .descripcion {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+/* Datos generales */
+.datos-generales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.dato {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 220px;
+  display: flex;
+  gap: 1rem;
+}
+
+.dato-icono {
+  color: var(--color-acento);
+  font-size: 1.5rem;
+}
+
+/* Habilidades */
+.habilidades {
+  margin-top: 3rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background-color: #1f2937;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.skill img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.5rem;
+}
+
+/* Trayectoria */
+.trayectoria .bloque {
+  background-color: #1e293b;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid var(--color-boton);
+  border-radius: 6px;
+}
+
+/* Proyectos */
+.vistas-proyectos .gallery,
+.proyectos .capturas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.gallery figure {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 4px;
+}
+
+.proyecto-card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.btn-proyecto {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0f172a;
+  background: var(--color-acento);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Redes */
+.iconos-redes {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #1e293b;
+  color: var(--color-texto);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  background-color: #374151;
+}
+
+/* Formulario contacto */
+.formulario-contacto {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #1f2937;
+  color: white;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  padding: 0.8rem 1rem;
+  background-color: var(--color-boton);
+  color: #0f172a;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #0ea76b;
+}

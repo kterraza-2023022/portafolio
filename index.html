@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 
 </head>
 <body>
@@ -129,7 +131,21 @@
     </div><div class="skill">
       <img src="https://cdn.simpleicons.org/.net/4169E1" alt=".net" />
       <span>.NET</span>
+      </div><div class="skill">
+      <i class="devicon-java-plain colored" style="font-size: 60px;"></i>
+
+
+      <span>Java</span>
+      </div><div class="skill">
+      <img src="https://cdn.simpleicons.org/SpringBoot/4169E1" alt=".SpringBoot" />
+      <span>SpringBoot</span>
+      </div><div class="skill">
+      <img src="https://cdn.simpleicons.org/Github/4169E1" alt=".Github" />
+      <span>Github</span>
+    
     </div>
+    
+    
   </div>
 <!-- <div class="grafica-container">
   <h4>Gráfica de Dominio</h4>
@@ -234,12 +250,29 @@
 
 
     <section id="contacto" class="contacto">
-      <div class="contenedor">
-        <h2>Contacto</h2>
-        <p>Escríbeme: <a href="mailto:kennyalexanderterraza@gmail.com">kennyalexanderterraza@gmail.com</a></p>
-      </div>
-    </section>
+  <div class="contenedor">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta, propuesta o simplemente quieres saludar? Envíame un mensaje.</p>
+    
+    <form action="https://formsubmit.co/kennyalexanderterraza@gmail.com" method="POST" class="formulario-contacto">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      
+      <!-- Evita spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirige después de enviar -->
+      <input type="hidden" name="_next" value="https://tu-portafolio.netlify.app/">
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
   </main>
+  <footer>
+  &copy; 2025 Luciano Terraza. Todos los derechos reservados.
+</footer>
 
   <script src="https://unpkg.com/scrollreveal"></script>
  
